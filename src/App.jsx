@@ -4,6 +4,12 @@ import HomePage from "./pages/HomePage";
 import MainPage from "./pages/MainPage";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Card from "./components/Card";
+import SideSection from "./components/SideSection";
+import CreateEvent from "./components/CreateEvent";
+import Event from "./pages/Event";
+import JoinEvent from "./components/JoinEvent";
+import CreateEventPage from "./pages/CreateEventPage";
 
 const App = () => {
   return (
@@ -11,7 +17,7 @@ const App = () => {
       <Router>
         <Routes>
           {/* <Route path="/" element={<Verification />} /> */}
-          <Route path="/" element={<MainPage />} />
+          <Route path="/" element={<CreateEventPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/about" element={<About />} />
