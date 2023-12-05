@@ -22,7 +22,7 @@ export const Navbar = () => {
             </Link>
           </div>
           <div className="flex-1 w-1/2 p-4 text-right">
-            <Link to="" className="m-4">
+            <Link to="/homepage" className="m-4">
               Tentang Eventify
             </Link>
             <Link to="" className="m-4">
@@ -59,11 +59,11 @@ export const Navbar = () => {
                 : " flex content-center mt-10 pr-5"
             }
           >
-            <Link to="" className="m-2">
-              Home
+            <Link to="/event" className="m-2">
+              Event
             </Link>
             <Link
-              to={location.pathname === "/" ? "/login" : ""}
+              to={location.pathname === "/" ? "/login" : "/createevent"}
               className="m-2"
             >
               Buat Event
@@ -125,7 +125,7 @@ export const Navbar = () => {
                       className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
                     >
                       <li>
-                        <Link to="" className="justify-between">
+                        <Link to="/profil" className="justify-between">
                           Profile
                           <span className="badge">New</span>
                         </Link>

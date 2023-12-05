@@ -69,7 +69,7 @@ const Login = () => {
                 />
                 <span className="label-text">Klik Centang</span>
               </label>
-              <Link to="">Lupa Kata Sandi</Link>
+              <Link to="/mail">Lupa Kata Sandi</Link>
             </div>
             <div className="flex justify-center items-center py-[2rem]">
               <Link

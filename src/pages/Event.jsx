@@ -26,7 +26,7 @@ const Event = () => {
             </div>
             <div className="w-[20%]">
               <div className="border bg-[#407BFF] p-2 rounded-md text-white text-center">
-                <Link to="">Buat Manajement Event mu</Link>
+                <Link to="/createevent">Buat Manajement Event mu</Link>
               </div>
             </div>
           </div>

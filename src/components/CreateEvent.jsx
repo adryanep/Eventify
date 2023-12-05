@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const CreateEvent = () => {
   const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ const CreateEvent = () => {
 
   return (
     <div className="w-full mx-auto">
-      <div className=" border-gray-300 rounded p-4">
+      <div className="mx-[6rem] my-[4rem]">
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="name" className="block mb-1">
@@ -39,7 +40,7 @@ const CreateEvent = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 border rounded border-solid border-black"
             />
           </div>
           <div className="mb-4">
@@ -52,7 +53,7 @@ const CreateEvent = () => {
               name="description"
               value={formData.description}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 border rounded border-solid border-black"
             ></textarea>
           </div>
           <div className="mb-4">
@@ -66,7 +67,7 @@ const CreateEvent = () => {
               name="date"
               value={formData.date}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 border rounded border-solid border-black"
             />
           </div>
           <div className="mb-4">
@@ -80,12 +81,12 @@ const CreateEvent = () => {
               name="category"
               value={formData.category}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 border rounded border-solid border-black"
             />
           </div>
 
           <div className="mb-4">
-            <label htmlFor="committee" className="block mb-1">
+            <label htmlFor="committee" className="block mb-2">
               Panitia
             </label>
             <input
@@ -95,11 +96,11 @@ const CreateEvent = () => {
               name="committee"
               value={formData.committee}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 border rounded border-solid border-black"
             />
           </div>
 
-          <input type="file" className="file-input w-full max-w-xs" />
+          <input type="file" className="file-input w-full max-w-xs mb-2" />
           <div className="mb-4">
             <label htmlFor="eventCode" className="block mb-1">
               Masukan Kode Acara
@@ -111,16 +112,17 @@ const CreateEvent = () => {
               name="eventCode"
               value={formData.eventCode}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 border rounded border-solid border-black"
             />
           </div>
           <div className="flex justify-center">
-            <button
+            <Link
+              to="/event"
               type="submit"
-              className="py-2 px-4 bg-blue-500 text-white rounded w-[264px]"
+              className="py-2 px-4 bg-blue-500 text-white rounded w-[264px] text-center mt-[2rem]"
             >
               Buat Acara
-            </button>
+            </Link>
           </div>
         </form>
       </div>

@@ -10,15 +10,15 @@ const CreateEventPage = () => {
   return (
     <>
       <Navbar />
-      <div className="mx-[2rem]">
-        <p className="text-md font-bold">Buat Manajemen Event mu</p>
+      <div className="mx-[10rem] my-[2rem]">
+        <p className="text-black font-bold text-lg">Buat Manajemen Event mu</p>
       </div>
-      <div className="w-[1183px] mx-auto">
+      <div className="w-[1183px] mx-auto my-[3rem]">
         <div className="border border-gray-300 rounded p-4">
           <div className="flex justify-around">
             <div
               className={`${
-                event ? "border-b-4 border-black" : ""
+                event ? "border-b-4 border-[#FF0F0F]" : ""
               } w-[30%] text-center`}
               onClick={() => setEvent(true)}
             >
@@ -26,7 +26,7 @@ const CreateEventPage = () => {
             </div>
             <div
               className={`${
-                !event ? "border-b-4 border-black" : ""
+                !event ? "border-b-4 border-[#FF0F0F]" : ""
               } w-[30%] text-center`}
               onClick={() => setEvent(false)}
             >

@@ -1,13 +1,14 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
     <>
       <Navbar />
-      <div className="flex">
-        <div className="p-10 flex-col ml-[1rem]">
+      <div className="flex min-h-screen">
+        <div className="p-10 flex-col ml-[1rem] sticky">
           <img src="/src/assets/event-vip.svg"></img>
           <p className="my-[1rem] text-black font-bold">
             Event yang belum diikuti
@@ -41,45 +42,53 @@ const HomePage = () => {
         </div>
         <div className="flex flex-col">
           <div className="flex-col justify-center card border-2 rounded-none mt-[3rem] shadow-xl w-[35rem]">
-            <h4 className="font-bold ml-[5rem] text-lg text-black pt-[1rem]">
+            <h4 className="font-bold ml-[3rem] text-lg text-black pt-[1rem]">
               Fitur
             </h4>
             <div className="flex justify-around">
               <div>
-                <img
-                  src="src/assets/panitia.svg"
-                  className="p-8 w-[111px] pb-5"
-                ></img>
-                <p className="text-center text-black font-bold pb-[1rem]">
-                  Panitia
-                </p>
+                <Link to="/fitur_panitia">
+                  <img
+                    src="src/assets/panitia.svg"
+                    className="p-8 w-[111px] pb-5"
+                  ></img>
+                  <p className="text-center text-black font-bold pb-[1rem]">
+                    Panitia
+                  </p>
+                </Link>
               </div>
               <div>
-                <img
-                  src="src/assets/agenda.svg"
-                  className="p-8 w-[100px] pb-6"
-                ></img>
-                <p className="text-center text-black font-bold pb-[1rem]">
-                  Agenda
-                </p>
+                <Link to="/fitur_agenda">
+                  <img
+                    src="src/assets/agenda.svg"
+                    className="p-8 w-[100px] pb-6"
+                  ></img>
+                  <p className="text-center text-black font-bold pb-[1rem]">
+                    Agenda
+                  </p>
+                </Link>
               </div>
               <div>
-                <img
-                  src="src/assets/anggaran.svg"
-                  className="p-8 w-[6rem]"
-                ></img>
-                <p className="text-center text-black font-bold pb-[1rem]">
-                  Anggaran
-                </p>
+                <Link to="/fitur_anggaran">
+                  <img
+                    src="src/assets/anggaran.svg"
+                    className="p-8 w-[6rem]"
+                  ></img>
+                  <p className="text-center text-black font-bold pb-[1rem]">
+                    Anggaran
+                  </p>
+                </Link>
               </div>
               <div>
-                <img
-                  src="src/assets/ceklis.svg"
-                  className="p-8 w-[6rem] pb-[34px]"
-                ></img>
-                <p className="text-center text-black font-bold pb-[1rem]">
-                  Ceklis
-                </p>
+                <Link to="fitur_cheklist">
+                  <img
+                    src="src/assets/ceklis.svg"
+                    className="p-8 w-[6rem] pb-[34px]"
+                  ></img>
+                  <p className="text-center text-black font-bold pb-[1rem]">
+                    Ceklis
+                  </p>
+                </Link>
               </div>
             </div>
           </div>

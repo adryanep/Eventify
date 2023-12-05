@@ -32,10 +32,18 @@ export const Footer = () => {
         </nav>
         <nav className="text-white">
           <header className="footer-title opacity-100">Fitur</header>
-          <a className="link link-hover">Panitia</a>
-          <a className="link link-hover">Agenda</a>
-          <a className="link link-hover">Anggaran</a>
-          <a className="link link-hover">Ceklis</a>
+          <Link to="/fitur_panitia" className="link link-hover">
+            Panitia
+          </Link>
+          <Link to="/fitur_agenda" className="link link-hover">
+            Agenda
+          </Link>
+          <Link to="/fitur_anggaran" className="link link-hover">
+            Anggaran
+          </Link>
+          <Link to="/fitur_cheklist" className="link link-hover">
+            Ceklis
+          </Link>
           <br></br>
           <br></br>
           <a className="link link-hover">Kebijakan Privasi</a>
