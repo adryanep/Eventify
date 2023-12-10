@@ -73,7 +73,7 @@ const TambahDivisi = () => {
           </div>
           <div className="text-center pt-[5rem]">
             <Link
-              to={""}
+              to="/fitur_panitia"
               className="bg-[#1A73E8] border-primary border-[1px] w-[178px] rounded-md p-3 text-white"
             >
               Tambah Divisi

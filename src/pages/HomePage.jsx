@@ -80,7 +80,7 @@ const HomePage = () => {
                 </Link>
               </div>
               <div>
-                <Link to="fitur_cheklist">
+                <Link to="/fitur_cheklist">
                   <img
                     src="src/assets/ceklis.svg"
                     className="p-8 w-[6rem] pb-[34px]"

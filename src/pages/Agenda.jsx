@@ -32,7 +32,7 @@ const Agenda = () => {
         </div>
         <Link
           to="/tambahagenda"
-          className="bg-[#1A73E8] rounded-md p-3 flex text-white justify-end ml-[61rem] mr-[5rem] mb-[4rem]"
+          className="bg-[#1A73E8] rounded-md p-3 flex text-white justify-end ml-[975px] mr-[4rem] mb-[4rem]"
         >
           Tambah Agenda
         </Link>

@@ -107,14 +107,6 @@ const Profil = () => {
                     />
                     <p className="text-black ml-4">Perempuan</p>
                   </div>
-                  <div className="flex">
-                    <input
-                      type="radio"
-                      name="radio-1"
-                      className="radio border-gray-700"
-                    />
-                    <p className="text-black ml-4">Lainnya</p>
-                  </div>
                 </div>
                 <label htmlFor="tanggal" className="my-4">
                   Tanggal Lahir

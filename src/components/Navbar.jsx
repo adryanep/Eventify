@@ -134,7 +134,7 @@ export const Navbar = () => {
                         <Link to="">Settings</Link>
                       </li>
                       <li>
-                        <Link to="">Logout</Link>
+                        <Link to="/login">Logout</Link>
                       </li>
                     </ul>
                   </div>
@@ -147,26 +147,6 @@ export const Navbar = () => {
             )}
           </div>
         </div>
-      </div>
-      <div
-        className={
-          location.pathname === "/"
-            ? "bg-[#235EAC] text-white pl-[20rem] pb-[2rem]"
-            : "bg-[#0B4FAA] text-white pl-[20rem] pb-[2rem]"
-        }
-      >
-        <Link to="" className="m-2">
-          #EventMusik
-        </Link>
-        <Link to="" className="m-2">
-          #EventOlahraga
-        </Link>
-        <Link to="" className="m-2">
-          #EventPopuler
-        </Link>
-        <Link to="" className="m-2">
-          #EventAja
-        </Link>
       </div>
     </>
   );

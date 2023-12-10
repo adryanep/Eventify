@@ -90,7 +90,7 @@ const Cheklist = () => {
       </div>
       <Link
         to="/detailcheklist"
-        className="bg-[#1A73E8] rounded-md p-3 flex text-white justify-end ml-[66rem] mr-[20rem] mb-[4rem]"
+        className="bg-[#1A73E8] rounded-md p-3 flex text-white justify-end ml-[67rem] mr-[20rem] mb-[4rem] text-center"
       >
         Cek Agenda
       </Link>

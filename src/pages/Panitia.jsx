@@ -121,7 +121,7 @@ const Panitia = () => {
         </div>
         <Link
           to="/tambahpanitia"
-          className="bg-[#1A73E8] rounded-md p-3 flex text-white justify-end ml-[74rem] mr-[12rem] mb-[4rem]"
+          className="bg-[#1A73E8] rounded-md p-3 flex text-white justify-end ml-[73rem] mr-[12rem] mb-[4rem]"
         >
           Tambah Panitia
         </Link>

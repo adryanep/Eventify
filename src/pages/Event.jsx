@@ -41,13 +41,13 @@ const Event = () => {
             <div className="my-[2rem]">
               <Link
                 to=""
-                className="bg-[#407BFF] w-[5rem] m-2 p-2 rounded-md text-white text-center"
+                className="bg-[#407BFF] w-[5rem] mr-2 p-2 rounded-md text-white text-center"
               >
                 Event Aktif
               </Link>
               <Link
                 to=""
-                className="bg-[#407BFF] w-[5rem] p-2 rounded-md text-white text-center"
+                className="bg-[#F8F9FF] w-[5rem] p-2 rounded-md text-[#365FEF] text-center border-[#365FEF] border-[1px]"
               >
                 Event Terdahulu
               </Link>
