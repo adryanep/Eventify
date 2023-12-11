@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CardHomePageSection = () => {
   return (
@@ -13,7 +14,9 @@ const CardHomePageSection = () => {
             kami. Tak ada konflik atau kebingungan hanya koordinasi yang lancar!
           </p>
           <div className="card-actions justify-start">
-            <button className="btn btn-primary">Buat Event</button>
+            <Link to="/login" className="btn btn-primary">
+              Buat Event
+            </Link>
           </div>
         </div>
       </div>

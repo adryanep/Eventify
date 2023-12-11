@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -9,18 +10,18 @@ const HeroSection = () => {
           buat perbedaan!
         </h1>
         <div className="flex  gap-4 mx-[3rem]">
-          <div
-            to=""
+          <Link
+            to="/login"
             className="bg-[#1A73E8] text-white border py-2 px-3 rounded"
           >
             Event
-          </div>
-          <div
-            to=""
+          </Link>
+          <Link
+            to="/login"
             className="bg-[#235EAC] text-white border py-2 px-3 rounded"
           >
             Non Event
-          </div>
+          </Link>
         </div>
       </div>
       <img src="/src/assets/hero-img.svg" className="w-1/2" />

@@ -9,7 +9,7 @@ export const Navbar = () => {
         className={
           location.pathname === "/"
             ? "bg-[#235EAC] text-white font-thin"
-            : "bg-[#1A73E8] text-white font-thin"
+            : "hidden"
         }
       >
         <div className="flex justify-between mx-[3rem]">
@@ -49,7 +49,7 @@ export const Navbar = () => {
           <input
             type="text"
             placeholder="cari event seru di sini"
-            className="input mt-10 w-[35rem] text-black"
+            className="input mt-10 w-[34rem] text-black"
           />
 
           <div
@@ -59,8 +59,11 @@ export const Navbar = () => {
                 : " flex content-center mt-10 pr-5"
             }
           >
-            <Link to="/event" className="m-2">
-              Event
+            <Link
+              to={location.pathname === "/" ? "/login" : "/homepage"}
+              className="m-2"
+            >
+              Beranda
             </Link>
             <Link
               to={location.pathname === "/" ? "/login" : "/createevent"}
@@ -68,8 +71,11 @@ export const Navbar = () => {
             >
               Buat Event
             </Link>
-            <Link to="" className="m-2">
-              Details
+            <Link
+              to={location.pathname === "/" ? "/login" : "/event"}
+              className="m-2"
+            >
+              Event
             </Link>
             {location.pathname !== "/" && (
               <>
@@ -129,9 +135,6 @@ export const Navbar = () => {
                           Profile
                           <span className="badge">New</span>
                         </Link>
-                      </li>
-                      <li>
-                        <Link to="">Settings</Link>
                       </li>
                       <li>
                         <Link to="/login">Logout</Link>
