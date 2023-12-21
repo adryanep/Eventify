@@ -44,7 +44,7 @@ const TambahDivisi = () => {
                     <input
                       className="bg-white border-solid border-2 border-grey rounded-lg p-[1rem] pl-10 w-full text-black border-black"
                       type="text"
-                      id="nama"
+                      id="divisi"
                       placeholder="Masukan Nama Divisi"
                     />
                     <span className="absolute top-1/2 transform -translate-y-1/2 left-3">
@@ -62,8 +62,8 @@ const TambahDivisi = () => {
                   <div className="relative">
                     <input
                       className="bg-white border-solid border-2 border-grey rounded-lg p-[1rem]  w-full text-black border-black"
-                      type="number"
-                      id="nama"
+                      type="text"
+                      id="anggota"
                       placeholder="Masukan Nama Anggota"
                     />
                   </div>
