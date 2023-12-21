@@ -18,7 +18,7 @@ const TambahAgenda2 = () => {
         <div className="mx-[10rem]">
           <div className="my-[2rem]">
             <Link
-              to={"/tambahagenda"}
+              to={"/fitur_agenda"}
               className="text-black font-bold text-[2rem]"
             >
               &lt; Tambah Agenda
@@ -36,30 +36,14 @@ const TambahAgenda2 = () => {
                     htmlFor="nama"
                     className="text-black font-bold text-base my-[1rem]"
                   >
-                    Pilih Jenis
+                    Judul Agenda
                   </label>
                   <div className="relative">
                     <input
                       className="bg-white border-solid border-2 border-grey rounded-lg p-[1rem] w-full text-black border-black"
                       type="text"
                       id="nama"
-                      placeholder="Isi Nama Divisi"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-col">
-                  <label
-                    htmlFor="nama"
-                    className="text-black font-bold text-base my-[1rem]"
-                  >
-                    Jumlah Anggota
-                  </label>
-                  <div className="relative">
-                    <input
-                      className="bg-white border-solid border-2 border-grey rounded-lg p-[1rem]  w-full text-black border-black"
-                      type="number"
-                      id="nama"
-                      placeholder="Isi Jumlah Anggota"
+                      placeholder="Masukan Judul Agenda"
                     />
                   </div>
                 </div>
@@ -71,12 +55,10 @@ const TambahAgenda2 = () => {
                     Deksripsi
                   </label>
                   <div className="relative">
-                    <input
-                      className="bg-white border-solid border-2 border-grey rounded-lg p-[1rem]  w-full text-black border-black"
-                      type="textarea"
-                      id="nama"
-                      placeholder="Isi Deksripsi"
-                    />
+                    <textarea
+                      className="textarea bg-white border-solid border-2 border-grey rounded-lg p-[1rem]  w-full text-black border-black"
+                      placeholder="Masukan Deksripsi Agenda"
+                    ></textarea>
                   </div>
                 </div>
                 <div className="flex flex-col">
@@ -100,7 +82,7 @@ const TambahAgenda2 = () => {
           </div>
           <div className="text-center py-[5rem]">
             <Link
-              to="/tambahagenda3"
+              to="/fitur_agenda"
               className="bg-[#1A73E8] border-primary border-[1px] w-[178px] rounded-md p-3 text-white"
             >
               Tambah Agenda

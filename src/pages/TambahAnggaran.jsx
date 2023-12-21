@@ -36,14 +36,14 @@ const TambahAnggaran = () => {
                     htmlFor="nama"
                     className="text-black font-bold text-base my-[1rem]"
                   >
-                    Tambah Section Baru
+                    Anggaran
                   </label>
                   <div className="relative">
                     <input
                       className="bg-white border-solid border-2 border-grey rounded-lg p-[1rem] w-full text-black border-black"
                       type="text"
                       id="nama"
-                      placeholder="Masukan nama section"
+                      placeholder="Masukan judul Anggaran"
                     />
                   </div>
                 </div>
@@ -59,7 +59,7 @@ const TambahAnggaran = () => {
                       className="bg-white border-solid border-2 border-grey rounded-lg p-[1rem]  w-full text-black border-black"
                       type="text"
                       id="nama"
-                      placeholder="Isi Uraian Data"
+                      placeholder="Masukan Uraian Barang"
                     />
                   </div>
                 </div>

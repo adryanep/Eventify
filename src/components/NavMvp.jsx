@@ -5,7 +5,7 @@ const NavMvp = () => {
   const location = useLocation();
 
   return (
-    <div className="border-solid border-2 border-black rounded-md">
+    <div className="border-solid border-[1px] border-black rounded-lg">
       <div className="join join-vertical w-[261px]">
         <Link
           to="/detailevent"

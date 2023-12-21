@@ -7,10 +7,6 @@ import CardAgenda from "../components/CardAgenda";
 import Footer from "../components/Footer";
 
 const Agenda = () => {
-  let card = [];
-  for (let i = 0; i < 3; i++) {
-    card.push(<CardAgenda />);
-  }
   return (
     <>
       <Navbar />
@@ -20,19 +16,18 @@ const Agenda = () => {
             &lt; Pekan Olahraga Mahasiswa
           </Link>
         </div>
-        <div className="mx-[0]">
-          <HeroMvp />
-        </div>
         <div className="flex my-[3rem]">
           <div>
             <NavMvp />
           </div>
 
-          <div className="mx-[9rem]">{card}</div>
+          <div className="mx-[5rem]">
+            <CardAgenda />
+          </div>
         </div>
         <Link
-          to="/tambahagenda"
-          className="bg-[#1A73E8] rounded-md p-3 flex text-white justify-end ml-[975px] mr-[4rem] mb-[4rem]"
+          to="/tambahagenda2"
+          className="bg-[#1A73E8] rounded-md p-3 flex text-white justify-end ml-[975px] mr-[4rem] mb-[5rem]"
         >
           Tambah Agenda
         </Link>

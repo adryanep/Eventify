@@ -30,11 +30,11 @@ const Details = () => {
         <div className="mx-[0]">
           <HeroMvp />
         </div>
-        <div className="flex my-[3rem] mx-[0]">
+        <div className="flex my-[3rem]">
           <div>
             <NavMvp />
           </div>
-          <div className="mx-[2rem]">
+          <div className="mx-[5rem] mb-10">
             <div className="deskripsi">
               <p className="text-black font-bold text-base mb-[0.5rem]">
                 Detail/Deskripsi

@@ -3,10 +3,10 @@ import React from "react";
 const CardAgenda = () => {
   return (
     <>
-      <div className="mb-[2rem]">
-        <div className="card w-[732px] shadow-md">
+      <div>
+        <div className="card w-[790px] shadow-md rounded-none">
           <div className="flex justify-end bg-[#1A73E8]">
-            <p className="p-[10px]">Agenda</p>
+            <p className="p-[10px] text-white">Agenda</p>
           </div>
           <div>
             <h2 className="card-title pt-[1rem] pl-[1rem]">Rapat Perdana</h2>

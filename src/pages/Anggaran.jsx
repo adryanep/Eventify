@@ -15,9 +15,6 @@ const Anggaran = () => {
             &lt; Pekan Olahraga Mahasiswa
           </Link>
         </div>
-        <div className="mx-[0]">
-          <HeroMvp />
-        </div>
         <div className="flex my-[3rem]">
           <div>
             <NavMvp />
@@ -29,33 +26,62 @@ const Anggaran = () => {
                   {/* head */}
                   <thead>
                     <tr>
+                      <th className="text-black font-bold text-lg">Anggaran</th>
                       <th></th>
-                      <th className="text-black font-bold">Anggaran</th>
                       <th></th>
-                      <th className="text-primary font-bold">Lihat Detail</th>
+                      <th></th>
+                      <th></th>
                     </tr>
                   </thead>
                   <tbody>
                     {/* row 1 */}
                     <tr className="bg-[#1A73E8]">
-                      <th className="text-white">No</th>
-                      <td></td>
-                      <td className="text-white">Section</td>
-                      <td className="text-white">Subtotal</td>
+                      <td className="text-white">No</td>
+                      <td className="text-white">Uraiann</td>
+                      <td className="text-white">Volume</td>
+                      <td className="text-white">Rincian</td>
+                      <td className="text-white">Satuan</td>
+                      <td className="text-white">Jumlah</td>
                     </tr>
                     {/* row 2 */}
                     <tr>
                       <th>1</th>
-                      <td></td>
-                      <td>Belanja Bahan</td>
-                      <td>Rp. 1.050.000</td>
+                      <td>Kertas Hvs</td>
+                      <td>10</td>
+                      <td>Lembar</td>
+                      <td>Rp. 1.000</td>
+                      <td>Rp. 10.000</td>
+                    </tr>
+                    <tr>
+                      <th>2</th>
+                      <td>Bolpoin</td>
+                      <td>1</td>
+                      <td>Pcs</td>
+                      <td>Rp. 2.000</td>
+                      <td>Rp. 2.000</td>
+                    </tr>
+                    <tr>
+                      <th>3</th>
+                      <td>Amplop</td>
+                      <td>10</td>
+                      <td>Pcs</td>
+                      <td>Rp. 1.000</td>
+                      <td>Rp. 10.000</td>
+                    </tr>
+                    <tr>
+                      <td
+                        colspan="6"
+                        className="w-[100%] h-[2px] bg-primary p-0"
+                      />
                     </tr>
                     {/* row 3 */}
                     <tr>
                       <th className="text-black font-bold">Total</th>
                       <td></td>
                       <td></td>
-                      <td>Rp. 1.050.000</td>
+                      <td></td>
+                      <td></td>
+                      <td>Rp. 22.000</td>
                     </tr>
                   </tbody>
                 </table>

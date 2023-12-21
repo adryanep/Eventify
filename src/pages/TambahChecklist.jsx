@@ -22,7 +22,7 @@ const TambahChecklist = () => {
         <div className="mx-[10rem]">
           <div className="my-[2rem]">
             <Link
-              to={"/detailcheklist"}
+              to={"/fitur_cheklist"}
               className="text-black font-bold text-[2rem]"
             >
               &lt; Tambah Cheklist
@@ -47,7 +47,23 @@ const TambahChecklist = () => {
                       className="bg-white border-solid border-2 border-grey rounded-lg p-[1rem] w-full text-black border-black"
                       type="text"
                       id="nama"
-                      placeholder="Isi Nama Cheklist"
+                      placeholder="Masukan Judul Cheklist"
+                    />
+                  </div>
+                </div>
+                <div className="flex flex-col">
+                  <label
+                    htmlFor="nama"
+                    className="text-black font-bold text-base my-[1rem]"
+                  >
+                    Tambah Data
+                  </label>
+                  <div className="relative">
+                    <input
+                      className="bg-white border-solid border-2 border-grey rounded-lg p-[1rem] w-full text-black border-black"
+                      type="text"
+                      id="nama"
+                      placeholder="Masukan Nama Data"
                     />
                   </div>
                 </div>
@@ -56,7 +72,7 @@ const TambahChecklist = () => {
           </div>
           <div className="text-center py-[3rem]">
             <Link
-              to="/tambahdata"
+              to="/fitur_cheklist"
               className="bg-[#1A73E8] border-primary border-[1px] w-[178px] rounded-md p-3 text-white"
             >
               Tambah Cheklist

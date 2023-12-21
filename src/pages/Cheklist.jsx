@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import HeroMvp from "../components/HeroMvp";
 import NavMvp from "../components/NavMvp";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -25,18 +24,15 @@ const Cheklist = () => {
             &lt; Pekan Olahraga Mahasiswa
           </Link>
         </div>
-        <div className="mx-[0]">
-          <HeroMvp />
-        </div>
         <div className="flex my-[3rem] mx-[0]">
           <div>
             <NavMvp />
           </div>
-          <div className="join flex-col w-full px-[8rem]">
-            <div className="card-body rounded-md shadow-md m-[2rem]">
+          <div className="flex flex-col w-full items-end">
+            <div className="card card-body border-[0.5px] mx-[2rem] rounded-none shadow-md w-[90%]">
               <label
                 htmlFor="nama"
-                className="text-black font-bold text-base my-[1rem]"
+                className="text-black font-bold text-lg mb-2"
               >
                 Perlengkapan Utama
               </label>
@@ -61,39 +57,15 @@ const Cheklist = () => {
                 <p>Trofi dan Medali</p>
               </div>
             </div>
-            <div className="card-body rounded-md shadow-md m-[2rem]">
-              <label
-                htmlFor="nama"
-                className="text-black font-bold text-base my-[1rem]"
-              >
-                Perlengkapan Acara
-              </label>
-              <div className="flex pb-[1rem]">
-                <input
-                  type="checkbox"
-                  checked="checked"
-                  className="checkbox checkbox-info mr-2"
-                />
-                <p>Spanduk Acara</p>
-              </div>
-              <div className="flex pb-[1rem]">
-                <input
-                  type="checkbox"
-                  checked="checked"
-                  className="checkbox checkbox-info mr-2"
-                />
-                <p>Poster Promosi</p>
-              </div>
-            </div>
+            <Link
+              to="/tambahcheklist"
+              className="bg-[#1A73E8] rounded-md p-3 flex text-white w-[20%] m-[2rem] mb-[4rem]"
+            >
+              Cek Agenda
+            </Link>
           </div>
         </div>
       </div>
-      <Link
-        to="/detailcheklist"
-        className="bg-[#1A73E8] rounded-md p-3 flex text-white justify-end ml-[67rem] mr-[20rem] mb-[4rem] text-center"
-      >
-        Cek Agenda
-      </Link>
       <Footer />
     </>
   );

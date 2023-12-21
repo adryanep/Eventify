@@ -19,7 +19,7 @@ const TambahDivisi = () => {
           <div className="mx-[10rem]">
             <div className="my-[2rem]">
               <Link
-                to={"/tambahpanitia"}
+                to={"/fitur_panitia"}
                 className="text-black font-bold text-[2rem]"
               >
                 &lt; Tambah Divisi
@@ -45,7 +45,7 @@ const TambahDivisi = () => {
                       className="bg-white border-solid border-2 border-grey rounded-lg p-[1rem] pl-10 w-full text-black border-black"
                       type="text"
                       id="nama"
-                      placeholder="Isi Nama Divisi"
+                      placeholder="Masukan Nama Divisi"
                     />
                     <span className="absolute top-1/2 transform -translate-y-1/2 left-3">
                       <img src="/src/assets/people.svg" />
@@ -57,14 +57,14 @@ const TambahDivisi = () => {
                     htmlFor="nama"
                     className="text-black font-bold text-base my-[1rem]"
                   >
-                    Jumlah Anggota
+                    Masukan Nama Anggota
                   </label>
                   <div className="relative">
                     <input
                       className="bg-white border-solid border-2 border-grey rounded-lg p-[1rem]  w-full text-black border-black"
                       type="number"
                       id="nama"
-                      placeholder="Isi Jumlah Anggota"
+                      placeholder="Masukan Nama Anggota"
                     />
                   </div>
                 </div>

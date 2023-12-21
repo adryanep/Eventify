@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import Card from "../components/Card";
 import SideSection from "../components/SideSection";
+import DataEvent from "./DataEvent";
 
 const Event = () => {
   const dummy = [0, 1, 2, 3, 4, 5];
@@ -54,13 +55,16 @@ const Event = () => {
             </div>
             <div className="flex flex-wrap gap-6">
               {!showAll ? (
-                dummy.map(() => {
-                  return <Card />;
+                DataEvent.map((data, id) => {
+                  id = id + 1;
+                  if (id > 6) return;
+                  return <Card data={data} />;
                 })
               ) : (
                 <div className="flex flex-wrap gap-[2rem]">
-                  {dummy2.map(() => {
-                    return <Card />;
+                  {DataEvent.map(() => {
+                    id = id + 1;
+                    return <Card data={(data, id)} />;
                   })}
                 </div>
               )}
@@ -70,7 +74,7 @@ const Event = () => {
                 <Link
                   to=""
                   className="bg-[#407BFF] w-[5rem] p-3 rounded-md text-white text-center"
-                  onClick={() => setShowAll(!showAll)}
+                  // onClick={() => setShowAll(!showAll)}
                 >
                   Jelajah Lebih Banyak Event
                 </Link>

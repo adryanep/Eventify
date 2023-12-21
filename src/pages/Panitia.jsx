@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import HeroMvp from "../components/HeroMvp";
 import { Link } from "react-router-dom";
 import NavMvp from "../components/NavMvp";
 import Footer from "../components/Footer";
@@ -16,16 +15,13 @@ const Panitia = () => {
               &lt; Pekan Olahraga Mahasiswa
             </Link>
           </div>
-          <div className="mx-[0]">
-            <HeroMvp />
-          </div>
         </div>
-        <div className="flex my-[3rem] ml-[10rem]">
+        <div className="flex w-full my-[3rem] pl-[10rem]">
           <div>
             <NavMvp />
           </div>
-          <div>
-            <div className="join join-vertical w-[90%] ml-[5rem] mr-[27rem] mb-[2rem] card shadow-md px-[7rem] pb-[2rem]">
+          <div className="w-[60%]">
+            <div className="join join-vertical w-[100%] ml-[5rem] mb-[2rem] card shadow-md px-[2rem] pb-[2rem]">
               <div className="join-item bg-white flex justify-between text-black text-xl font-bold pt-[2rem] pb-[1rem]">
                 Ketua Panitia
                 <Link></Link>
@@ -120,7 +116,7 @@ const Panitia = () => {
           </div>
         </div>
         <Link
-          to="/tambahpanitia"
+          to="/tambahdivisi"
           className="bg-[#1A73E8] rounded-md p-3 flex text-white justify-end ml-[73rem] mr-[12rem] mb-[4rem]"
         >
           Tambah Panitia
